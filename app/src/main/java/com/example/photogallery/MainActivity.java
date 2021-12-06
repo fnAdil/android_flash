@@ -46,14 +46,14 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked){
                     try {
-                        cameraManager.setTorchMode("0",false);
+                        cameraManager.setTorchMode("0",true);
                     } catch (CameraAccessException e) {
                         e.printStackTrace();
                     }
                     flashControl.setText("flash on");
                 }else{
                     try {
-                        cameraManager.setTorchMode("0",true);
+                        cameraManager.setTorchMode("0",false);
                     } catch (CameraAccessException e) {
                         e.printStackTrace();
                     }
